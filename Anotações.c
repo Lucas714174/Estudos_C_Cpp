@@ -34,3 +34,35 @@ int main() {
 }
 
 //***********************************************STRING_INPUT*********************************************************************
+
+#include <stdio.h>
+
+int main() {
+  // Create a string
+  char fullName[30];
+
+  // Ask the user to input some text (full name)
+  printf("Type your full name and press enter: \n");
+
+  // Get the text
+  fgets(fullName, sizeof(fullName), stdin);
+
+  // Output the text
+  printf("Hello %s", fullName);
+  
+  return 0;
+}
+
+
+//************************************************POT_10**************************************************************************
+
+#include <stdio.h>
+
+int main() {
+  float f1 = 35e3;
+  double d1 = 12E4;
+  
+  printf("%f\n", f1);
+  printf("%lf", d1);
+  return 0;
+}

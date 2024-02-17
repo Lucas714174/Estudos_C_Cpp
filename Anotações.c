@@ -1,5 +1,21 @@
 //Carreira de aprendizado c - https://www.w3schools.com/
 
+//Anotações
+/* floatvs.double
+A precisão de um valor de ponto flutuante indica quantos dígitos o valor pode ter após a vírgula decimal. 
+A precisão de floaté de seis ou sete dígitos decimais, enquanto doubleas variáveis ​​têm uma precisão de cerca de 15 dígitos. 
+Portanto, geralmente é mais seguro usá-lo doublepara a maioria dos cálculos -
+mas observe que ele ocupa o dobro da memória (float 8 bytes versus 4 bytes).  */
+
+//Armazenamento de var - memória
+/* 
+Data Type    Size
+  int	      2 or 4 bytes
+  float	    4 bytes
+  double	  8 bytes
+  char	    1 byte 
+*/
+
 //**********************************************HELLO_WORLD*****************************************************************
 
 #include <stdio.h>
@@ -64,5 +80,25 @@ int main() {
   
   printf("%f\n", f1);
   printf("%lf", d1);
+  return 0;
+}
+
+//********************************************TAMANHO_DA_MEMORIA****************************************************************
+
+#include <stdio.h>
+
+int main() {
+ int myInt;
+ float myFloat;
+ double myDouble;
+ char myChar;
+ /* Observe que usamos o %luformato específico para imprimir o resultado, em vez de %d. 
+ É porque o compilador espera que o operador sizeof retorne um long unsigned int( %lu), em vez de int( %d). 
+ Em alguns computadores pode funcionar com %d, mas é mais seguro usar %lu.*/
+ printf("%lu\n", sizeof(myInt));
+ printf("%lu\n", sizeof(myFloat));
+ printf("%lu\n", sizeof(myDouble));
+ printf("%lu\n", sizeof(myChar));
+  
   return 0;
 }

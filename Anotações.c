@@ -102,3 +102,42 @@ int main() {
   
   return 0;
 }
+//*******************************************Operadores_de_atribuicao**********************************************************
+
+ //operadores de atribuição:
+    //trata-se de uma operação de bit 
+    // 2 em bin =   00000010
+    //três em bin = 00000011
+    //portanto, basta somar de acordo com a tabela verdade
+#include <stdio.h>
+
+int main(){
+    int x = 2;
+
+    //Atribuição com OR binário
+    // é o mesmo que x=x|3
+    x |= 3;
+    printf("%d",x);
+
+    //Atribuição com XOR binário
+    // é o mesmo que x=x^3
+    x ^= 3;
+    printf("%d", x);
+
+    //Atribuição com AND binário
+    // é o mesmo que x=x&3
+    x &= 3;
+    printf("%d", x);
+
+    //Atribuição de deslocamento a esquerda
+    // é o mesmo que x=x>>3
+    x >>= 3;
+    printf("%d", x);
+
+    //Atribuição com deslocamento a direita
+    // é o mesmo que x=x<<3
+    x <<= 3;
+    printf("%d", x);
+    
+    return 0;
+}

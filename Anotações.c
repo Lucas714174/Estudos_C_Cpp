@@ -105,7 +105,7 @@ int main() {
 //*******************************************Operadores_de_atribuicao**********************************************************
 
 //Alguns valores vão retornar zerados por receberem a atribuição anterior, its ok.
-  //operadores de atribuição:
+ //operadores de atribuição:
     //trata-se de uma operação de bit 
     // 2 em bin =   00000010
     //três em bin = 00000011
@@ -113,7 +113,7 @@ int main() {
 #include <stdio.h>
 
 int main(){
-    int x = 2;
+   int x = 2;
     int a = 2;
 
     //Atribuição com OR binário
@@ -140,6 +140,29 @@ int main(){
     // é o mesmo que x=x<<3
     x <<= 3;
     printf("%d\n", x);
-    
     return 0;
 }
+
+/*//Operadores lógicos
+
+    //AND lógico
+    int x = 5;
+    int y = 3;
+    // Returns 1 (true) because 5 is greater than 3 AND 5 is less than 10
+    printf("%d\n", x > 3 && x < 10);
+
+
+    // OR lógico
+    int x = 5;
+    int y = 3;
+    // Returns 1 (true) because one of the conditions are true (5 is greater than 3, but 5 is not less than 4)
+    printf("%d\n", x > 3 || x < 4);
+
+
+    //NOT lógico
+    int x = 5;
+    int y = 3;
+    // Returns false (0) because ! (not) is used to reverse the result
+    printf("%d\n", !(x > 3 && x < 10));
+    return 0;
+}*/

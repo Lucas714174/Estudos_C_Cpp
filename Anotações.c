@@ -104,7 +104,8 @@ int main() {
 }
 //*******************************************Operadores_de_atribuicao**********************************************************
 
- //operadores de atribuição:
+//Alguns valores vão retornar zerados por receberem a atribuição anterior, its ok.
+  //operadores de atribuição:
     //trata-se de uma operação de bit 
     // 2 em bin =   00000010
     //três em bin = 00000011
@@ -113,31 +114,32 @@ int main() {
 
 int main(){
     int x = 2;
+    int a = 2;
 
     //Atribuição com OR binário
     // é o mesmo que x=x|3
     x |= 3;
-    printf("%d",x);
+    printf("%d\n",x);
 
     //Atribuição com XOR binário
     // é o mesmo que x=x^3
     x ^= 3;
-    printf("%d", x);
+    printf("%d\n", x);
 
     //Atribuição com AND binário
     // é o mesmo que x=x&3
-    x &= 3;
-    printf("%d", x);
+    a &= 3;
+    printf("%d\n", a);
 
     //Atribuição de deslocamento a esquerda
     // é o mesmo que x=x>>3
     x >>= 3;
-    printf("%d", x);
+    printf("%d\n", x);
 
     //Atribuição com deslocamento a direita
     // é o mesmo que x=x<<3
     x <<= 3;
-    printf("%d", x);
+    printf("%d\n", x);
     
     return 0;
 }

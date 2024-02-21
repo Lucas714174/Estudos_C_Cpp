@@ -166,3 +166,21 @@ int main(){
     printf("%d\n", !(x > 3 && x < 10));
     return 0;
 }*/
+*******************************************************CONDITIONS**********************************************************
+
+  #include <stdio.h>
+
+int main() {
+  int age;
+  printf("Enter yor age, please:\n");
+  scanf("%d",&age);
+  if (age < 18) {
+    printf("You are still very young.");
+  } else {
+    printf("It's OK, guy. Released");
+  }
+  return 0;
+}
+//Operador ternário
+/*int time = 20;
+(time < 18) ? printf("Good day.") : printf("Good evening.");*/

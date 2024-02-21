@@ -166,7 +166,7 @@ int main(){
     printf("%d\n", !(x > 3 && x < 10));
     return 0;
 }*/
-*******************************************************CONDITIONS**********************************************************
+//*******************************************************CONDITIONS**********************************************************
 
   #include <stdio.h>
 
@@ -184,3 +184,40 @@ int main() {
 //Operador ternário
 /*int time = 20;
 (time < 18) ? printf("Good day.") : printf("Good evening.");*/
+
+//******************************************************SWITCH******************************************************************
+
+#include <stdio.h>
+
+int main() {
+  int day ;
+  printf("Digite um numero que corresponda a um dia da semana:\n");
+  scanf("%d",&day);
+  switch (day) {
+    case 1:
+      printf("Monday");
+      break;
+    case 2:
+      printf("Tuesday");
+      break;
+    case 3:
+      printf("Wednesday");
+      break;
+    case 4:
+      printf("Thursday");
+      break;
+    case 5:
+      printf("Friday");
+      break;
+    case 6:
+      printf("Saturday");
+      break;
+    case 7:
+      printf("Sunday");
+      break;
+    default:
+      printf("Looking forward to the Weekend");
+  }
+    
+  return 0;
+}
